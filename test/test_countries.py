@@ -20,8 +20,8 @@ class MockCountriesService:
 class CountriesSearchTest(unittest.TestCase):
 
   def setUp(self):
-    self.service = CountriesService()
-    # self.service = MockCountriesService()
+    # self.service = CountriesService()
+    self.service = MockCountriesService()
     self.search = CountriesSearch(self.service)
 
   def test_get_country_from_json(self):
